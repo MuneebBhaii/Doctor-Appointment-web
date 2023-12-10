@@ -1,0 +1,92 @@
+@import "./sass/bootstrap";
+@import './sass/register';
+@import './sass/login';
+@import './sass/navbar';
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex: 1 0 auto;
+}
+
+// footer
+Footer{
+  background-color: #f35b04!important;
+}
+label {
+  margin: 5px;
+}
+
+.textmanage {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0%;
+}
+.date{
+  position: absolute;
+  top: 230px;
+}
+.deleteOption , .editOption{
+  position: absolute;
+  top: 5px;
+  right: 3px;
+  font-size: large;
+}
+.editOption{
+  right: 25px;
+}
+.menu{
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 5px;
+  display: none;
+}
+// sider
+#sider{
+  display: block;
+}
+.close{
+  display: none;
+}
+@media (max-width:575px) {
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #sider{
+    padding: "20 10";
+    background-color: white;
+    z-index: 99999;
+    display: none;
+  }
+  .menu_part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3{
+      margin-right: 30px;
+      text-align: center;
+    }
+    .close{
+      display: block;
+      margin-left: 20px;
+      border: none;
+      img{
+        width: 35px;
+      }
+  }
+  }
+}
